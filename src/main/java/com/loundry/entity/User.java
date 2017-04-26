@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tb_customer")
+@Table(name="tb_user")
 public class User {
 	
 	@Id
@@ -21,7 +21,7 @@ public class User {
 	@Column(name="username")
 	private String username;
 	
-	@Column(name="nama_customer")
+	@Column(name="nama_user")
 	private String namaCustomer;
 	
 	@Column(name="password")
