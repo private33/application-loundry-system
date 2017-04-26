@@ -22,16 +22,16 @@ public class User {
 	private String username;
 	
 	@Column(name="nama_user")
-	private String namaCustomer;
+	private String nameUser;
 	
 	@Column(name="password")
 	private String password;
 	
-	@Column(name="alamat_user")
-	private String alamatUser;
+	@Column(name="address_user")
+	private String addressUser;
 	
-	@Column(name="telp_user")
-	private String telpUser;
+	@Column(name="phone_user")
+	private String phoneUser;
 	
 	@ManyToOne
 	@JoinColumn(name = "role_id", nullable=false)
@@ -53,12 +53,12 @@ public class User {
 		this.username = username;
 	}
 
-	public String getNamaCustomer() {
-		return namaCustomer;
+	public String getNameUser() {
+		return nameUser;
 	}
 
-	public void setNamaCustomer(String namaCustomer) {
-		this.namaCustomer = namaCustomer;
+	public void setNameUser(String nameUser) {
+		this.nameUser = nameUser;
 	}
 
 	public String getPassword() {
@@ -69,20 +69,27 @@ public class User {
 		this.password = password;
 	}
 
-	public String getAlamatUser() {
-		return alamatUser;
+	public String getAddressUser() {
+		return addressUser;
 	}
 
-	public void setAlamatUser(String alamatUser) {
-		this.alamatUser = alamatUser;
+	public void setAddressUser(String addressUser) {
+		this.addressUser = addressUser;
 	}
 
-	public String getTelpUser() {
-		return telpUser;
+	public String getPhoneUser() {
+		return phoneUser;
 	}
 
-	public void setTelpUser(String telpUser) {
-		this.telpUser = telpUser;
+	public void setPhoneUser(String phoneUser) {
+		this.phoneUser = phoneUser;
 	}
-	
+
+	public Roles getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Roles roles) {
+		this.roles = roles;
+	}	
 }
