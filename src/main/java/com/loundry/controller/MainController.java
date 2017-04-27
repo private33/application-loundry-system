@@ -9,56 +9,56 @@ public class MainController {
 
 	@RequestMapping("/")
 	public String goHome() {
-		return "frontend/index";
+		return "user/index";
 	}
 	
 	@RequestMapping("/index")
 	public String goHomeWithModel(Model model) {
-		return "frontend/index";
+		return "user/index";
 	}
 	
 	@RequestMapping("/about")
 	public String goAboutWithModel(Model model2) {
-		return "frontend/about";
+		return "user/about";
 	}
 	
 	@RequestMapping("/services")
 	public String goServicesWithModel(Model model3) {
-		return "frontend/services";
+		return "user/services";
 	}
 	
 	@RequestMapping("/pricing")
 	public String goPricingWithModel(Model model4) {
-		return "frontend/pricing";
+		return "user/pricing";
 	}
 	
 	@RequestMapping("/faq")
 	public String goFaqWithModel(Model model5) {
-		return "frontend/faq";
+		return "user/faq";
 	}
 	
 	@RequestMapping("/blog")
 	public String goBlogWithModel(Model model6) {
-		return "frontend/blog";
+		return "user/blog";
 	}
 	
 	@RequestMapping("/contact")
 	public String goContactWithModel(Model model7) {
-		return "frontend/contact";
+		return "user/contact";
 	}
 	
 	@RequestMapping("/blog-1")
 	public String goBlog1WithModel(Model model8) {
-		return "frontend/blog-1";
+		return "user/blog-1";
 	}
 	
 	@RequestMapping("/blog-2")
 	public String goBlog2WithModel(Model model9) {
-		return "frontend/blog-2";
+		return "user/blog-2";
 	}
 	
 	@RequestMapping("/blog-3")
 	public String goBlog3WithModel(Model model10) {
-		return "frontend/blog-3";
+		return "user/blog-3";
 	}
 }
