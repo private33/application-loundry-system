@@ -709,6 +709,9 @@ p {
 .stat-item .stat-title .number{
 	font-size: 18px;
     color: #FFFFFF;
+    background: transparent;
+    text-align:center;
+    border:0px;
     line-height: 35px;
     font-family: raleway, sans-serif;
     font-weight: 700;
