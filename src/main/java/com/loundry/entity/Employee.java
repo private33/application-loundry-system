@@ -10,12 +10,12 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tb_user")
-public class User {
+@Table(name="tb_employee")
+public class Employee {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="user_id")
+	@Column(name="emp_id")
 	private int userId;
 	
 	@Column(name="username")

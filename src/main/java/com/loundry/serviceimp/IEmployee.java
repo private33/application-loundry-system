@@ -1,5 +1,5 @@
 package com.loundry.serviceimp;
 
-public interface IUser {
+public interface IEmployee {
 
 }
