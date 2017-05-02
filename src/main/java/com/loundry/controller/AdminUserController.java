@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/admin")
-public class AdminController {
+public class AdminUserController {
 	
-	@RequestMapping("/")
+	@RequestMapping("/formuser")
 	public String goHome(Model model) {
-		model.addAttribute("page", "index");
-		return "admin/index";
+		model.addAttribute("page", "formcreateuser");
+		return "admin/formcreateuser";
 	}
 
 }
