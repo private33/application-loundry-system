@@ -1,12 +1,14 @@
 package com.loundry.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -16,80 +18,92 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="emp_id")
-	private int userId;
+	private int employeeId;
 	
-	@Column(name="username")
-	private String username;
+	@Column(name="emp_name")
+	private String employeeName;
 	
-	@Column(name="nama_user")
-	private String nameUser;
+	@Column(name="emp_address")
+	private String employeeAddress;
 	
-	@Column(name="password")
-	private String password;
+	@Column(name="emp_phone")
+	private String employeePhone;
 	
-	@Column(name="address_user")
-	private String addressUser;
+	@Column(name="emp_identity_number")
+	private String employeeIdentityNumber;
 	
-	@Column(name="phone_user")
-	private String phoneUser;
+	@Column(name="emp_DOB")
+	private Date employeeDateOfBirth;
 	
-	@ManyToOne
-	@JoinColumn(name = "role_id", nullable=false)
-	private Roles roles;
+	@Column(name="emp_join_date")
+	private Date employeeJoinDate;
+	
+	@OneToOne
+	@JoinColumn(name="login_id", nullable=false)
+	private Login login;
 
-	public int getUserId() {
-		return userId;
+	public int getEmployeeId() {
+		return employeeId;
 	}
 
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getEmployeeName() {
+		return employeeName;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
 	}
 
-	public String getNameUser() {
-		return nameUser;
+	public String getEmployeeAddress() {
+		return employeeAddress;
 	}
 
-	public void setNameUser(String nameUser) {
-		this.nameUser = nameUser;
+	public void setEmployeeAddress(String employeeAddress) {
+		this.employeeAddress = employeeAddress;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getEmployeePhone() {
+		return employeePhone;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setEmployeePhone(String employeePhone) {
+		this.employeePhone = employeePhone;
 	}
 
-	public String getAddressUser() {
-		return addressUser;
+	public String getEmployeeIdentityNumber() {
+		return employeeIdentityNumber;
 	}
 
-	public void setAddressUser(String addressUser) {
-		this.addressUser = addressUser;
+	public void setEmployeeIdentityNumber(String employeeIdentityNumber) {
+		this.employeeIdentityNumber = employeeIdentityNumber;
 	}
 
-	public String getPhoneUser() {
-		return phoneUser;
+	public Date getEmployeeDateOfBirth() {
+		return employeeDateOfBirth;
 	}
 
-	public void setPhoneUser(String phoneUser) {
-		this.phoneUser = phoneUser;
+	public void setEmployeeDateOfBirth(Date employeeDateOfBirth) {
+		this.employeeDateOfBirth = employeeDateOfBirth;
 	}
 
-	public Roles getRoles() {
-		return roles;
+	public Date getEmployeeJoinDate() {
+		return employeeJoinDate;
 	}
 
-	public void setRoles(Roles roles) {
-		this.roles = roles;
-	}	
+	public void setEmployeeJoinDate(Date employeeJoinDate) {
+		this.employeeJoinDate = employeeJoinDate;
+	}
+
+	public Login getLogin() {
+		return login;
+	}
+
+	public void setLogin(Login login) {
+		this.login = login;
+	}
+
 }
