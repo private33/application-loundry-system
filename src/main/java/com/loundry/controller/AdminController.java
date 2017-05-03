@@ -9,9 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AdminController {
 	
 	@RequestMapping("/")
-	public String goHome(Model model) {
-		model.addAttribute("page", "index");
+	public String goToindex(Model model) {
 		return "admin/index";
 	}
-
+	
+	@RequestMapping("/login")
+	public String goToLogin(Model model1) {
+		model1.addAttribute("page", "login");
+		return "admin/login";
+	}
+	
+	@RequestMapping("/profile")
+	public String goToProfile(Model model2) {
+		model2.addAttribute("page", "profile");
+		return "admin/profile";
+	}
 }

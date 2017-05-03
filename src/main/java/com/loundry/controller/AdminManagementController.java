@@ -6,12 +6,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/admin")
-public class AdminUserController {
+public class AdminManagementController {
 	
-	@RequestMapping("/formuser")
-	public String goHome(Model model) {
-		model.addAttribute("page", "formcreateuser");
-		return "admin/formcreateuser";
+	@RequestMapping("/formcreateemployee")
+	public String goToFormEmployee(Model model1) {
+		model1.addAttribute("page", "formcreateuser");
+		return "admin/forms/formcreateemployee";
 	}
-
+	
+	@RequestMapping("/formcreatecustomer")
+	public String goToFormCustomer(Model model2) {
+		model2.addAttribute("page", "formcreatecustomer");
+		return "admin/forms/formcreatecustomer";
+	}
+	
+	@RequestMapping("/formcreaterole")
+	public String goToFormRole(Model model3) {
+		model3.addAttribute("page", "formcreaterole");
+		return "admin/forms/formcreaterole";
+	}
+	
+	@RequestMapping("/formcreatesoap")
+	public String goToFormSoap(Model model4) {
+		model4.addAttribute("page", "formcreatesoap");
+		return "admin/forms/formcreatesoap";
+	}
 }
