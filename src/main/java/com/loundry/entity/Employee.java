@@ -38,6 +38,12 @@ public class Employee {
 	@Column(name="emp_join_date")
 	private Date employeeJoinDate;
 	
+	@Column(name="emp_username")
+	private String employeeUsername;
+	
+	@Column(name="emp_password")
+	private String employeePassword;
+	
 	@OneToOne
 	@JoinColumn(name="login_id", nullable=false)
 	private Login login;
@@ -104,6 +110,22 @@ public class Employee {
 
 	public void setLogin(Login login) {
 		this.login = login;
+	}
+
+	public String getEmployeeUsername() {
+		return employeeUsername;
+	}
+
+	public void setEmployeeUsername(String employeeUsername) {
+		this.employeeUsername = employeeUsername;
+	}
+
+	public String getEmployeePassword() {
+		return employeePassword;
+	}
+
+	public void setEmployeePassword(String employeePassword) {
+		this.employeePassword = employeePassword;
 	}
 
 }

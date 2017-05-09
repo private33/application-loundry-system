@@ -26,32 +26,48 @@
           <ul class="sidebar-menu">
             <li class="header"></li>
             <li class="treeview">
-              <a href="/admin/">
+              <a href="/admin/index">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-edit"></i> <span>User Management</span>
+                <i class="fa fa-book"></i> <span> Roles Management</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="./formcreateemployee"><i class="fa fa-circle-o text-aqua"></i> Management Employee</a></li>
-                <li><a href="./formcreatecustomer"><i class="fa fa-circle-o text-yellow"></i> Management Customer</a></li>
-                <li><a href="./formcreaterole"><i class="fa fa-circle-o text-aqua"></i> Management Roles</a></li>                
-                <li><a href="./formcreatesoap"><i class="fa fa-circle-o text-yellow"></i> Management Soap</a></li>
+                <li><a href="../../admin/roles/create"><i class="fa fa-circle-o text-aqua"></i> Management Roles</a></li>                
+                <li><a href="../../admin/roles/dataroles"><i class="fa fa-edit text-yellow"></i> Data Roles</a></li>
+              </ul>
+            </li>            
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-book"></i> <span>Employee Management</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="../../admin/employees/create"><i class="fa fa-circle-o text-aqua"></i> Management Employee</a></li>
+                <li><a href="../../admin/employees/dataemployee"><i class="fa fa-edit text-yellow"></i> Data Employee</a></li>
               </ul>
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-book"></i> <span>List Of Data</span>
+                <i class="fa fa-book"></i> <span>Management Customer</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="./dataemployee"><i class="fa fa-circle-o text-aqua"></i> Data Employee</a></li>
-                <li><a href="./datacustomer"><i class="fa fa-circle-o text-yellow"></i> Data Customer</a></li>
-                <li><a href="./dataroles"><i class="fa fa-circle-o text-aqua"></i> Data Roles</a></li>
-                <li><a href="./datasoap"><i class="fa fa-circle-o text-yellow"></i> Data Soap</a></li>
+                <li><a href="../../admin/customers/create"><i class="fa fa-circle-o text-aqua"></i> Management Customer</a></li>
+                <li><a href="../../admin/customers/datacustomer"><i class="fa fa-edit text-yellow"></i> Data Customer</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-book"></i> <span>Management Soap</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="soap/create"><i class="fa fa-circle-o text-aqua"></i> Management Soap</a></li>
+                <li><a href="soap/datasoap"><i class="fa fa-edit text-yellow"></i> Data Soap</a></li>
               </ul>
             </li>
             <li class="header"></li>

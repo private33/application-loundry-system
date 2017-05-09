@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/admin")
 public class AdminController {
 	
-	@RequestMapping("/")
+	@RequestMapping("/index")
 	public String goToindex(Model model) {
 		return "admin/index";
 	}
