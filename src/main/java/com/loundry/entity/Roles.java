@@ -46,6 +46,7 @@ public class Roles {
 		this.roleDescription = roleDescription;
 	}
 	
-	
+	public Roles(){
+	}
 
 }

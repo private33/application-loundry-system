@@ -1,6 +1,6 @@
-package com.loundry.service;
+package com.loundry.serviceimpl;
 
-import com.loundry.serviceimp.IEmployee;
+import com.loundry.service.IEmployee;
 
 public class EmployeeService implements IEmployee {
 

@@ -61,15 +61,16 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" action="../../admin/roles/createnewroles" method="post" ng-app="">
+            <form role="form" action="../edit/editroles" method="post" ng-app="">
               <div class="box-body">
+              <input type="hidden" name="roleId" th:value="${editrole.roleId}"/><br/>
                 <div class="form-group">
                   <label>Name Roles</label>
-                  <input type="text" class="form-control" name="roleName" required="required" placeholder="Enter Roles Name" th:attr="value = ${data !=null ? data.role_name : '' }" />
+                  <input type="text" class="form-control" name="roleName" required="required" placeholder="Enter Roles Name" th:attr="value = ${editrole !=null ? editrole.roleName : '' }" />
                 </div>
                 <div class="form-group">
                   <label>Roles Description</label>
-                  <input type="text" class="form-control" name="roleDescription" required="required" placeholder="Enter Roles Description" th:attr="value = ${data !=null ? data.role_description : '' }" />
+                  <input type="text" class="form-control" name="roleDescription" required="required" placeholder="Enter Roles Description" th:attr="value = ${editrole !=null ? editrole.roleDescription : '' }" />
                 </div>
                 <div class="checkbox">
                   <label>

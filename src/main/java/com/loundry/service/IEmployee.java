@@ -1,4 +1,4 @@
-package com.loundry.serviceimp;
+package com.loundry.service;
 
 public interface IEmployee {
 
